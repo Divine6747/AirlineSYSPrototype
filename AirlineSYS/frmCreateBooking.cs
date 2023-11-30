@@ -17,6 +17,11 @@ namespace AirlineSYS
         {
             InitializeComponent();
         }
+        public frmCreateBooking(frmAirlineMainMenu parent)
+        {
+            InitializeComponent();
+            this.parent = parent;
+        }
 
         private void frmCreateBooking_Load(object sender, EventArgs e)
         {

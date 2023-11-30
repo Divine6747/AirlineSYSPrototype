@@ -17,6 +17,11 @@ namespace AirlineSYS
         {
             InitializeComponent();
         }
+        public frmScheduleFlight(frmAirlineMainMenu parent)
+        {
+            InitializeComponent();
+            this.parent = parent;
+        }
 
         private void frmScheduleFlight_Load(object sender, EventArgs e)
         {
@@ -28,6 +33,41 @@ namespace AirlineSYS
             this.Close();
             frmAirlineMainMenu frmAirlineMainMenu = new frmAirlineMainMenu();
             frmAirlineMainMenu.Show();
+        }
+
+        private void lblOperatorCode_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblAirportPhone_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblAirportEmail_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtAirportEmail_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void grpAirportDetails_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblAddAirport_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnAirportConfirm_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

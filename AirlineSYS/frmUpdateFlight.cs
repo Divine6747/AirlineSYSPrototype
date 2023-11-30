@@ -17,6 +17,11 @@ namespace AirlineSYS
         {
             InitializeComponent();
         }
+        public frmUpdateFlight(frmAirlineMainMenu parent)
+        {
+            InitializeComponent();
+            this.parent = parent;
+        }
 
         private void frmUpdateFlight_Load(object sender, EventArgs e)
         {

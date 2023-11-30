@@ -13,7 +13,6 @@ namespace AirlineSYS
     
     public partial class frmAddOperator : Form
     {
-        frmAirlineMainMenu parent;
         public frmAddOperator()
         {
             InitializeComponent();
@@ -34,6 +33,16 @@ namespace AirlineSYS
             this.Close();
             frmAirlineMainMenu frmAirlineMainMenu = new frmAirlineMainMenu();
             frmAirlineMainMenu.Show();
+        }
+
+        private void txtOperatorStreet_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtOperatorCountry_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

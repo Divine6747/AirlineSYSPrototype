@@ -17,6 +17,11 @@ namespace AirlineSYS
         {
             InitializeComponent();
         }
+        public frmEndRoute(frmAirlineMainMenu parent)
+        {
+            InitializeComponent();
+            this.parent = parent;
+        }
 
         private void frmEndRoute_Load(object sender, EventArgs e)
         {

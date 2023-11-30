@@ -17,6 +17,11 @@ namespace AirlineSYS
         {
             InitializeComponent();
         }
+        public frmAirlineMainMenu(frmAirlineMainMenu parent)
+        {
+            InitializeComponent();
+            this.parent = parent;
+        }
 
         private void frmAirlineMainMenu_Load(object sender, EventArgs e)
         {
@@ -37,30 +42,35 @@ namespace AirlineSYS
             this.Hide();
             frmAirlineMainMenu.Show();
         }
+
         private void mnuUpdateFlight_Click_1(object sender, EventArgs e)
         {
-            frmScheduleFlight frmAirlineMainMenu = new frmScheduleFlight();
+            frmUpdateFlight frmAirlineMainMenu = new frmUpdateFlight();
             this.Hide();
             frmAirlineMainMenu.Show();
         }
+
         private void mnuCancelFlight_Click_1(object sender, EventArgs e)
         {
             frmCancelFlight frmAirlineMainMenu = new frmCancelFlight();
             this.Hide();
             frmAirlineMainMenu.Show();
         }
+
         private void mnuCreateBooking_Click_1(object sender, EventArgs e)
         {
             frmCreateBooking frmAirlineMainMenu = new frmCreateBooking();
             this.Hide();
             frmAirlineMainMenu.Show();
         }
+
         private void mnuUpdateBooking_Click_1(object sender, EventArgs e)
         {
             frmUpdateBooking frmAirlineMainMenu = new frmUpdateBooking();
             this.Hide();
             frmAirlineMainMenu.Show();
         }
+
         private void mnuCancelBooking_Click_1(object sender, EventArgs e)
         {
             frmCancelBooking frmAirlineMainMenu = new frmCancelBooking();
@@ -108,5 +118,6 @@ namespace AirlineSYS
             this.Hide();
             frmAirlineMainMenu.Show();
         }
+
     }
 }

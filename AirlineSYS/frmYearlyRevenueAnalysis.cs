@@ -18,6 +18,12 @@ namespace AirlineSYS
             InitializeComponent();
         }
 
+        public frmYearlyRevenueAnalysis(frmAirlineMainMenu parent)
+        {
+            InitializeComponent();
+            this.parent = parent;
+        }
+
         private void frmYearlyRevenueAnalysis_Load(object sender, EventArgs e)
         {
 

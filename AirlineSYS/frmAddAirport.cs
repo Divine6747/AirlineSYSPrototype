@@ -39,5 +39,15 @@ namespace AirlineSYS
             frmAirlineMainMenu frmAirlineMainMenu = new frmAirlineMainMenu();
             frmAirlineMainMenu.Show();
         }
+
+        private void txtAirportStreet_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtAirportCountry_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

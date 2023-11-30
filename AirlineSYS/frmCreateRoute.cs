@@ -17,6 +17,11 @@ namespace AirlineSYS
         {
             InitializeComponent();
         }
+        public frmCreateRoute(frmAirlineMainMenu parent)
+        {
+            InitializeComponent();
+            this.parent = parent;
+        }
 
         private void frmCreateRoute_Load(object sender, EventArgs e)
         {
@@ -28,6 +33,16 @@ namespace AirlineSYS
             this.Close();
             frmAirlineMainMenu frmAirlineMainMenu = new frmAirlineMainMenu();
             frmAirlineMainMenu.Show();
+        }
+
+        private void grpOperatorDetails_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblOperatorPhone_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -15,7 +15,13 @@ namespace AirlineSYS
         frmAirlineMainMenu parent;
         public frmCancelFlight()
         {
+           
             InitializeComponent();
+        }
+        public frmCancelFlight(frmAirlineMainMenu parent)
+        {
+            InitializeComponent();
+            this.parent = parent;
         }
 
         private void frmCancelFlight_Load(object sender, EventArgs e)

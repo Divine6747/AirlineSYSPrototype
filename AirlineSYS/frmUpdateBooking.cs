@@ -17,6 +17,11 @@ namespace AirlineSYS
         {
             InitializeComponent();
         }
+        public frmUpdateBooking(frmAirlineMainMenu parent)
+        {
+            InitializeComponent();
+            this.parent = parent;
+        }
 
         private void mnuUpdateBooking_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
         {

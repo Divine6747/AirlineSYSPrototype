@@ -92,28 +92,28 @@
             // mnuAddAirport
             // 
             this.mnuAddAirport.Name = "mnuAddAirport";
-            this.mnuAddAirport.Size = new System.Drawing.Size(180, 24);
+            this.mnuAddAirport.Size = new System.Drawing.Size(170, 24);
             this.mnuAddAirport.Text = "Add Airport";
             this.mnuAddAirport.Click += new System.EventHandler(this.mnuAddAirport_Click_1);
             // 
             // mnuAddOperator
             // 
             this.mnuAddOperator.Name = "mnuAddOperator";
-            this.mnuAddOperator.Size = new System.Drawing.Size(180, 24);
+            this.mnuAddOperator.Size = new System.Drawing.Size(170, 24);
             this.mnuAddOperator.Text = "Add Operator";
             this.mnuAddOperator.Click += new System.EventHandler(this.mnuAddOperator_Click_1);
             // 
             // mnuCreateRoute
             // 
             this.mnuCreateRoute.Name = "mnuCreateRoute";
-            this.mnuCreateRoute.Size = new System.Drawing.Size(180, 24);
+            this.mnuCreateRoute.Size = new System.Drawing.Size(170, 24);
             this.mnuCreateRoute.Text = "Create Route";
             this.mnuCreateRoute.Click += new System.EventHandler(this.mnuCreateRoute_Click_1);
             // 
             // mnuEndRoute
             // 
             this.mnuEndRoute.Name = "mnuEndRoute";
-            this.mnuEndRoute.Size = new System.Drawing.Size(180, 24);
+            this.mnuEndRoute.Size = new System.Drawing.Size(170, 24);
             this.mnuEndRoute.Text = "End Route";
             this.mnuEndRoute.Click += new System.EventHandler(this.mnuEndRoute_Click_1);
             // 
@@ -131,21 +131,21 @@
             // mnuScheduleFlight
             // 
             this.mnuScheduleFlight.Name = "mnuScheduleFlight";
-            this.mnuScheduleFlight.Size = new System.Drawing.Size(180, 24);
+            this.mnuScheduleFlight.Size = new System.Drawing.Size(179, 24);
             this.mnuScheduleFlight.Text = "Schedule Flight";
             this.mnuScheduleFlight.Click += new System.EventHandler(this.mnuScheduleFlight_Click_1);
             // 
             // mnuUpdateFlight
             // 
             this.mnuUpdateFlight.Name = "mnuUpdateFlight";
-            this.mnuUpdateFlight.Size = new System.Drawing.Size(180, 24);
+            this.mnuUpdateFlight.Size = new System.Drawing.Size(179, 24);
             this.mnuUpdateFlight.Text = "Update Flight";
             this.mnuUpdateFlight.Click += new System.EventHandler(this.mnuUpdateFlight_Click_1);
             // 
             // mnuCancelFlight
             // 
             this.mnuCancelFlight.Name = "mnuCancelFlight";
-            this.mnuCancelFlight.Size = new System.Drawing.Size(180, 24);
+            this.mnuCancelFlight.Size = new System.Drawing.Size(179, 24);
             this.mnuCancelFlight.Text = "Cancel Flight";
             this.mnuCancelFlight.Click += new System.EventHandler(this.mnuCancelFlight_Click_1);
             // 
