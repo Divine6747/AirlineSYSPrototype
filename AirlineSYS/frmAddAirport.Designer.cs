@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmAddAirport));
             this.mnuAddAiport = new System.Windows.Forms.MenuStrip();
             this.munBack = new System.Windows.Forms.Label();
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
@@ -64,7 +65,6 @@
             this.mnuAddAiport.Padding = new System.Windows.Forms.Padding(0);
             this.mnuAddAiport.Size = new System.Drawing.Size(800, 24);
             this.mnuAddAiport.TabIndex = 2;
-            this.mnuAddAiport.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.mnuAddAiport_ItemClicked);
             // 
             // munBack
             // 
@@ -178,7 +178,6 @@
             this.txtAirportCountry.Name = "txtAirportCountry";
             this.txtAirportCountry.Size = new System.Drawing.Size(173, 29);
             this.txtAirportCountry.TabIndex = 14;
-            this.txtAirportCountry.TextChanged += new System.EventHandler(this.txtAirportCountry_TextChanged);
             // 
             // txtAirportStreet
             // 
@@ -186,7 +185,6 @@
             this.txtAirportStreet.Name = "txtAirportStreet";
             this.txtAirportStreet.Size = new System.Drawing.Size(173, 29);
             this.txtAirportStreet.TabIndex = 12;
-            this.txtAirportStreet.TextChanged += new System.EventHandler(this.txtAirportStreet_TextChanged);
             // 
             // lblAirportCountry
             // 
@@ -278,6 +276,7 @@
             this.btnAirportConfirm.TabIndex = 10;
             this.btnAirportConfirm.Text = "CONFIRM";
             this.btnAirportConfirm.UseVisualStyleBackColor = false;
+            this.btnAirportConfirm.Click += new System.EventHandler(this.btnAirportConfirm_Click);
             // 
             // frmAddAirport
             // 
@@ -289,9 +288,9 @@
             this.Controls.Add(this.lblAddAirport);
             this.Controls.Add(this.munBack);
             this.Controls.Add(this.mnuAddAiport);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frmAddAirport";
             this.Text = "Add Airport";
-            this.Load += new System.EventHandler(this.frmAddAirport_Load);
             this.grpAirportAddress.ResumeLayout(false);
             this.grpAirportAddress.PerformLayout();
             this.grpAirportDetails.ResumeLayout(false);

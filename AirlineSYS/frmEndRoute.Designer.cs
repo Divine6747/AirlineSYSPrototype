@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmEndRoute));
             this.munBack = new System.Windows.Forms.Label();
             this.mnuEndRoute = new System.Windows.Forms.MenuStrip();
             this.btnOperatorConfirm = new System.Windows.Forms.Button();
@@ -184,6 +185,7 @@
             this.Controls.Add(this.lblAddAirport);
             this.Controls.Add(this.munBack);
             this.Controls.Add(this.mnuEndRoute);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frmEndRoute";
             this.Text = "End Route";
             this.Load += new System.EventHandler(this.frmEndRoute_Load);

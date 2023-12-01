@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmYearlyFlightAnalysis));
             this.munBack = new System.Windows.Forms.Label();
             this.mnuYearlyFlightAnalysis = new System.Windows.Forms.MenuStrip();
             this.lblSelectYear = new System.Windows.Forms.Label();
@@ -100,6 +101,7 @@
             this.Controls.Add(this.lblSelectYear);
             this.Controls.Add(this.munBack);
             this.Controls.Add(this.mnuYearlyFlightAnalysis);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frmYearlyFlightAnalysis";
             this.Text = "Yearly FlightAnalysis";
             this.Load += new System.EventHandler(this.frmYearlyFlightAnalysis_Load);

@@ -220,6 +220,7 @@
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.picAirlineMainMenu);
             this.Controls.Add(this.mnuAirlineMainMenu);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MainMenuStrip = this.mnuAirlineMainMenu;
             this.Name = "frmAirlineMainMenu";
             this.Text = "Airline Main Menu";

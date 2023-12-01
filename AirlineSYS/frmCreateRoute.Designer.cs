@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmCreateRoute));
             this.munBack = new System.Windows.Forms.Label();
             this.mnuCreateRoute = new System.Windows.Forms.MenuStrip();
             this.lblAddAirport = new System.Windows.Forms.Label();
@@ -164,6 +165,7 @@
             this.Controls.Add(this.lblAddAirport);
             this.Controls.Add(this.munBack);
             this.Controls.Add(this.mnuCreateRoute);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frmCreateRoute";
             this.Text = "Create Route";
             this.Load += new System.EventHandler(this.frmCreateRoute_Load);

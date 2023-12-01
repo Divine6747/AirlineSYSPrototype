@@ -23,16 +23,6 @@ namespace AirlineSYS
             this.parent = parent;
         }
 
-        private void mnuAddAiport_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
-        {
-
-        }
-
-        private void frmAddAirport_Load(object sender, EventArgs e)
-        {
-
-        }
-
         private void munBack_Click(object sender, EventArgs e)
         {
             this.Close();
@@ -40,14 +30,19 @@ namespace AirlineSYS
             frmAirlineMainMenu.Show();
         }
 
-        private void txtAirportStreet_TextChanged(object sender, EventArgs e)
+        private void btnAirportConfirm_Click(object sender, EventArgs e)
         {
+           /** if (txtAirportCode.Equals(""))
+            {
+               MessageBox.Show("Airport Code must be entered", "Error!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                
+                
+                txtAirportCode.Focus();
+                return;
 
-        }
 
-        private void txtAirportCountry_TextChanged(object sender, EventArgs e)
-        {
-
-        }
+            }
+           */
+        }      
     }
 }

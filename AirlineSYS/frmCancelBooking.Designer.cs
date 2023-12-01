@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmCancelBooking));
             this.munBack = new System.Windows.Forms.Label();
             this.mnuCancelBooking = new System.Windows.Forms.MenuStrip();
             this.textBox8 = new System.Windows.Forms.TextBox();
@@ -481,6 +482,7 @@
             this.Controls.Add(this.lblAddAirport);
             this.Controls.Add(this.munBack);
             this.Controls.Add(this.mnuCancelBooking);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frmCancelBooking";
             this.Text = "Cancel Booking";
             this.Load += new System.EventHandler(this.frmCancelBooking_Load);
