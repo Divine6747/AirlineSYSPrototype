@@ -39,5 +39,15 @@ namespace AirlineSYS
             frmAirlineMainMenu frmAirlineMainMenu = new frmAirlineMainMenu();
             frmAirlineMainMenu.Show();
         }
+
+        private void btnAirportConfirm_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void grpAirportDetails_Enter(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -121,7 +121,7 @@
             // 
             this.lblAirportPhone.AutoSize = true;
             this.lblAirportPhone.Font = new System.Drawing.Font("Open Sans", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblAirportPhone.Location = new System.Drawing.Point(31, 151);
+            this.lblAirportPhone.Location = new System.Drawing.Point(31, 159);
             this.lblAirportPhone.Name = "lblAirportPhone";
             this.lblAirportPhone.Size = new System.Drawing.Size(115, 20);
             this.lblAirportPhone.TabIndex = 17;
@@ -130,7 +130,7 @@
             // 
             // txtAirportPhone
             // 
-            this.txtAirportPhone.Location = new System.Drawing.Point(208, 149);
+            this.txtAirportPhone.Location = new System.Drawing.Point(208, 151);
             this.txtAirportPhone.Name = "txtAirportPhone";
             this.txtAirportPhone.Size = new System.Drawing.Size(173, 29);
             this.txtAirportPhone.TabIndex = 17;
@@ -139,7 +139,7 @@
             // 
             this.lblAirportEmail.AutoSize = true;
             this.lblAirportEmail.Font = new System.Drawing.Font("Open Sans", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblAirportEmail.Location = new System.Drawing.Point(405, 153);
+            this.lblAirportEmail.Location = new System.Drawing.Point(405, 152);
             this.lblAirportEmail.Name = "lblAirportEmail";
             this.lblAirportEmail.Size = new System.Drawing.Size(117, 20);
             this.lblAirportEmail.TabIndex = 19;
@@ -158,7 +158,7 @@
             // 
             this.lblOperatorCode.AutoSize = true;
             this.lblOperatorCode.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblOperatorCode.Location = new System.Drawing.Point(31, 97);
+            this.lblOperatorCode.Location = new System.Drawing.Point(31, 101);
             this.lblOperatorCode.Name = "lblOperatorCode";
             this.lblOperatorCode.Size = new System.Drawing.Size(113, 21);
             this.lblOperatorCode.TabIndex = 20;
@@ -167,7 +167,7 @@
             // 
             // txtOperatorCode
             // 
-            this.txtOperatorCode.Location = new System.Drawing.Point(208, 94);
+            this.txtOperatorCode.Location = new System.Drawing.Point(208, 95);
             this.txtOperatorCode.Name = "txtOperatorCode";
             this.txtOperatorCode.Size = new System.Drawing.Size(173, 29);
             this.txtOperatorCode.TabIndex = 21;
@@ -176,7 +176,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Open Sans", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(405, 103);
+            this.label2.Location = new System.Drawing.Point(405, 99);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(124, 20);
             this.label2.TabIndex = 24;
@@ -184,7 +184,7 @@
             // 
             // textBox2
             // 
-            this.textBox2.Location = new System.Drawing.Point(543, 99);
+            this.textBox2.Location = new System.Drawing.Point(543, 96);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(173, 29);
             this.textBox2.TabIndex = 25;
@@ -201,7 +201,7 @@
             // 
             // textBox3
             // 
-            this.textBox3.Location = new System.Drawing.Point(208, 208);
+            this.textBox3.Location = new System.Drawing.Point(208, 207);
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(173, 29);
             this.textBox3.TabIndex = 27;
