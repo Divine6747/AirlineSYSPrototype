@@ -34,5 +34,10 @@ namespace AirlineSYS
             frmAirlineMainMenu frmAirlineMainMenu = new frmAirlineMainMenu();
             frmAirlineMainMenu.Show();
         }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
