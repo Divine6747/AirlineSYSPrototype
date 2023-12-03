@@ -32,17 +32,37 @@ namespace AirlineSYS
 
         private void btnAirportConfirm_Click(object sender, EventArgs e)
         {
-           /** if (txtAirportCode.Equals(""))
+            /*if (txtAirportStreet.Text.Equals("") && txtAirportName.Text.Equals("") && txtAirportCode.Text.Equals(""))
             {
-               MessageBox.Show("Airport Code must be entered", "Error!", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                
-                
+                MessageBox.Show("All fields must be entered", "Error!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                txtAirportCode.Focus();
+                return;
+            }
+
+            if (int.txtAirportCity.Text)
+            {
+
+            }
+            */
+            if (txtAirportCode.Text.Length != 3 && !txtAirportCode.Text.All(char.IsLetter))
+            {
+                MessageBox.Show("Please enter a valid three-letter airport code.", "Error!", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 txtAirportCode.Focus();
                 return;
 
-
             }
-           */
-        }      
+
+
+        }
+
+        private void frmAddAirport_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtAirportCode_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
