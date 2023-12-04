@@ -116,8 +116,6 @@
             this.txtAirportCode.Name = "txtAirportCode";
             this.txtAirportCode.Size = new System.Drawing.Size(229, 34);
             this.txtAirportCode.TabIndex = 8;
-            this.txtAirportCode.TextChanged += new System.EventHandler(this.txtAirportCode_TextChanged);
-            // 
             // lblAirportName
             // 
             this.lblAirportName.AutoSize = true;
@@ -318,7 +316,6 @@
             this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "frmAddAirport";
             this.Text = "Add Airport";
-            this.Load += new System.EventHandler(this.frmAddAirport_Load);
             this.grpAirportAddress.ResumeLayout(false);
             this.grpAirportAddress.PerformLayout();
             this.grpAirportDetails.ResumeLayout(false);
