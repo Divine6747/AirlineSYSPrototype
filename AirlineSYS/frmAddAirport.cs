@@ -60,22 +60,21 @@ namespace AirlineSYS
             }
 
 
-            if (!(txtAirportStreet.Text.Length > 0 && txtAirportStreet.Text.Length <= 40) || !txtAirportStreet.Text.All(char.IsLetterOrDigit))
+            if (txtAirportStreet.Text.Length >= 40 || !txtAirportStreet.Text.All(char.IsLetterOrDigit))
             {
-                MessageBox.Show("Airport Street must be between 1 and 40 characters and contain only alphanumeric characters.", "Error!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Airport Street has a MAXIMUM of 40 characters and contain only alphanumeric characters.", "Error!", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 txtAirportStreet.Focus();
                 return;
             }
 
-
-            if (txtAirportCountry.Text.Length != 7 || !txtAirportCountry.Text.All(char.IsLetter))
+            if (txtAirportCountry.Text.Length >= 20 || !txtAirportCountry.Text.All(char.IsLetter))
             {
                 MessageBox.Show("Airport Country must be Alpha Numeric", "Error!", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 txtAirportCountry.Focus();
                 return;
             }
 
-            if (!(txtAirportEircode.Text.Length > 0 && txtAirportEircode.Text.Length <= 7) || !txtAirportEircode.Text.All(char.IsLetterOrDigit))
+            if (txtAirportEircode.Text.Length != 7 || !txtAirportEircode.Text.All(char.IsLetterOrDigit))
             {
                 MessageBox.Show("Airport Eircode must be Alpha Numeric", "Error!", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 txtAirportEircode.Focus();
@@ -90,7 +89,7 @@ namespace AirlineSYS
             }
 
 
-            if (!txtAirportEmail.Text.All(char.IsDigit) || !(txtAirportEmail.Text.Length > 0 && txtAirportEmail.Text.Length <= 15))
+            if (!txtAirportEmail.Text.All(char.IsDigit) || txtAirportEmail.Text.Length >= 15)
             {
                 MessageBox.Show("Airport Email must be Numeric", "Error!", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 txtAirportEmail.Focus();
