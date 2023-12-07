@@ -44,8 +44,8 @@
             this.txtOperatorStreet = new System.Windows.Forms.TextBox();
             this.lblOperatorCountry = new System.Windows.Forms.Label();
             this.lblOperatorCity = new System.Windows.Forms.Label();
-            this.txtAirportCity = new System.Windows.Forms.TextBox();
-            this.txtOperatortName = new System.Windows.Forms.TextBox();
+            this.txtOperatorCity = new System.Windows.Forms.TextBox();
+            this.txtOperatorName = new System.Windows.Forms.TextBox();
             this.lblOperatorName = new System.Windows.Forms.Label();
             this.txtOperatorCode = new System.Windows.Forms.TextBox();
             this.lblOperatorCode = new System.Windows.Forms.Label();
@@ -75,6 +75,7 @@
             this.btnOperatorConfirm.TabIndex = 13;
             this.btnOperatorConfirm.Text = "CONFIRM";
             this.btnOperatorConfirm.UseVisualStyleBackColor = false;
+            this.btnOperatorConfirm.Click += new System.EventHandler(this.btnOperatorConfirm_Click);
             // 
             // grpOperatorDetails
             // 
@@ -83,7 +84,7 @@
             this.grpOperatorDetails.Controls.Add(this.txtOperatorPhone);
             this.grpOperatorDetails.Controls.Add(this.lblOperatorPhone);
             this.grpOperatorDetails.Controls.Add(this.grpAirportAddress);
-            this.grpOperatorDetails.Controls.Add(this.txtOperatortName);
+            this.grpOperatorDetails.Controls.Add(this.txtOperatorName);
             this.grpOperatorDetails.Controls.Add(this.lblOperatorName);
             this.grpOperatorDetails.Controls.Add(this.txtOperatorCode);
             this.grpOperatorDetails.Controls.Add(this.lblOperatorCode);
@@ -138,7 +139,7 @@
             this.grpAirportAddress.Controls.Add(this.txtOperatorStreet);
             this.grpAirportAddress.Controls.Add(this.lblOperatorCountry);
             this.grpAirportAddress.Controls.Add(this.lblOperatorCity);
-            this.grpAirportAddress.Controls.Add(this.txtAirportCity);
+            this.grpAirportAddress.Controls.Add(this.txtOperatorCity);
             this.grpAirportAddress.Location = new System.Drawing.Point(35, 76);
             this.grpAirportAddress.Name = "grpAirportAddress";
             this.grpAirportAddress.Size = new System.Drawing.Size(642, 146);
@@ -179,7 +180,6 @@
             this.txtOperatorCountry.Name = "txtOperatorCountry";
             this.txtOperatorCountry.Size = new System.Drawing.Size(173, 29);
             this.txtOperatorCountry.TabIndex = 14;
-            this.txtOperatorCountry.TextChanged += new System.EventHandler(this.txtOperatorCountry_TextChanged);
             // 
             // txtOperatorStreet
             // 
@@ -187,7 +187,6 @@
             this.txtOperatorStreet.Name = "txtOperatorStreet";
             this.txtOperatorStreet.Size = new System.Drawing.Size(173, 29);
             this.txtOperatorStreet.TabIndex = 12;
-            this.txtOperatorStreet.TextChanged += new System.EventHandler(this.txtOperatorStreet_TextChanged);
             // 
             // lblOperatorCountry
             // 
@@ -209,19 +208,19 @@
             this.lblOperatorCity.TabIndex = 13;
             this.lblOperatorCity.Text = "City";
             // 
-            // txtAirportCity
+            // txtOperatorCity
             // 
-            this.txtAirportCity.Location = new System.Drawing.Point(434, 31);
-            this.txtAirportCity.Name = "txtAirportCity";
-            this.txtAirportCity.Size = new System.Drawing.Size(173, 29);
-            this.txtAirportCity.TabIndex = 14;
+            this.txtOperatorCity.Location = new System.Drawing.Point(434, 31);
+            this.txtOperatorCity.Name = "txtOperatorCity";
+            this.txtOperatorCity.Size = new System.Drawing.Size(173, 29);
+            this.txtOperatorCity.TabIndex = 14;
             // 
-            // txtOperatortName
+            // txtOperatorName
             // 
-            this.txtOperatortName.Location = new System.Drawing.Point(469, 43);
-            this.txtOperatortName.Name = "txtOperatortName";
-            this.txtOperatortName.Size = new System.Drawing.Size(173, 29);
-            this.txtOperatortName.TabIndex = 10;
+            this.txtOperatorName.Location = new System.Drawing.Point(469, 43);
+            this.txtOperatorName.Name = "txtOperatorName";
+            this.txtOperatorName.Size = new System.Drawing.Size(173, 29);
+            this.txtOperatorName.TabIndex = 10;
             // 
             // lblOperatorName
             // 
@@ -312,8 +311,8 @@
         private System.Windows.Forms.TextBox txtOperatorStreet;
         private System.Windows.Forms.Label lblOperatorCountry;
         private System.Windows.Forms.Label lblOperatorCity;
-        private System.Windows.Forms.TextBox txtAirportCity;
-        private System.Windows.Forms.TextBox txtOperatortName;
+        private System.Windows.Forms.TextBox txtOperatorCity;
+        private System.Windows.Forms.TextBox txtOperatorName;
         private System.Windows.Forms.Label lblOperatorName;
         private System.Windows.Forms.TextBox txtOperatorCode;
         private System.Windows.Forms.Label lblOperatorCode;

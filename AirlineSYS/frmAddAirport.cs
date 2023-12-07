@@ -34,13 +34,13 @@ namespace AirlineSYS
 
         private void btnAirportConfirm_Click(object sender, EventArgs e)
         {
-            if (txtAirportCode.Text.Equals("") || txtAirportName.Text.Equals("") || txtAirportStreet.Text.Equals("") || 
-                txtAirportCity.Text.Equals("") || txtAirportCountry.Text.Equals("") || txtAirportEircode.Text.Equals("") || 
+            if (txtAirportCode.Text.Equals("") || txtAirportName.Text.Equals("") || txtAirportStreet.Text.Equals("") ||
+                txtAirportCity.Text.Equals("") || txtAirportCountry.Text.Equals("") || txtAirportEircode.Text.Equals("") ||
                 txtAirportPhone.Text.Equals("") || txtAirportEmail.Text.Equals(""))
             {
                 MessageBox.Show("All fields must be entered", "Error!", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 txtAirportCode.Focus();
-                
+
                 return;
             }
 
@@ -52,7 +52,7 @@ namespace AirlineSYS
 
             }
 
-            if (!(txtAirportName.Text.Length > 0 && txtAirportName.Text.Length <= 60) || !txtAirportName.Text.All(char.IsLetter))
+            if (txtAirportName.Text.Length > 60 || !txtAirportName.Text.All(char.IsLetter))
             {
                 MessageBox.Show("Airport Name may only contain letters wuth the maximum length of 60", "Error!", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 txtAirportName.Focus();
@@ -60,14 +60,14 @@ namespace AirlineSYS
             }
 
 
-            if (txtAirportStreet.Text.Length >= 40 || !txtAirportStreet.Text.All(char.IsLetterOrDigit))
+            if (txtAirportStreet.Text.Length > 40 || !txtAirportStreet.Text.All(char.IsLetterOrDigit))
             {
                 MessageBox.Show("Airport Street has a MAXIMUM of 40 characters and contain only alphanumeric characters.", "Error!", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 txtAirportStreet.Focus();
                 return;
             }
 
-            if (txtAirportCountry.Text.Length >= 20 || !txtAirportCountry.Text.All(char.IsLetter))
+            if (txtAirportCountry.Text.Length > 30 || !txtAirportCountry.Text.All(char.IsLetter))
             {
                 MessageBox.Show("Airport Country must be Alpha Numeric", "Error!", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 txtAirportCountry.Focus();
@@ -89,21 +89,21 @@ namespace AirlineSYS
             }
 
 
-            if (!txtAirportEmail.Text.All(char.IsDigit) || txtAirportEmail.Text.Length >= 15)
+            if (txtAirportEmail.Text.All(char.IsDigit) || txtAirportEmail.Text.Length > 45)
             {
-                MessageBox.Show("Airport Email must be Numeric", "Error!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Airport Email must can not be Numeric and MAXIMUM length of 45", "Error!", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 txtAirportEmail.Focus();
                 return;
             }
 
-           
+
             string email = txtAirportEmail.Text;
 
             string emailPattern = @"^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$";
 
             if (!System.Text.RegularExpressions.Regex.IsMatch(email, emailPattern))
             {
-                MessageBox.Show("Invalid email format!","Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Invalid email format!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 txtAirportEmail.Focus();
                 return;
             }
@@ -120,7 +120,7 @@ namespace AirlineSYS
             txtAirportPhone.Clear();
             txtAirportEmail.Clear();
         }
-       
+
 
         private void frmAddAirport_Load(object sender, EventArgs e)
         {
