@@ -48,7 +48,7 @@ namespace AirlineSYS
             }
 
 
-            if (txtOperatorCode.Text.Length != 3 || !txtOperatorCode.Text.All(char.IsUpper))
+            if (txtOperatorCode.Text.Length != 2 || !txtOperatorCode.Text.All(char.IsUpper))
             {
                 MessageBox.Show("Operator Code must be a valid THREE UPPERCASE LETTER Operator Code.", "Error!", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 txtOperatorCode.Focus();
