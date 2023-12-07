@@ -67,7 +67,26 @@ namespace AirlineSYS
 
         private void btnAirportConfirm_Click(object sender, EventArgs e)
         {
+            if (cboDeptAirportFlight.Text.Equals("") || cboArrAirportFlight.Text.Equals("") || txtOperatorCode.Text.Equals("") ||
+                txtNumFlightSeats.Text.Equals("") ||
+                txtTicketPriceFlight.Text.Equals(""))
+            {
+                MessageBox.Show("All fields must be entered", "Error!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                cboDeptAirportFlight.Focus();
 
+                return;
+            }
+            else if (dtpDeptFlight.Value <= DateTime.Now)
+            {
+                MessageBox.Show("Date picked must be greater than current date", "Error!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                dtpDeptFlight.Focus();
+            }
+
+            else if (dtpDeptTimeFlight.Value <= DateTime.Now)
+            {
+                MessageBox.Show("Time picked must be greater than current time", "Error!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                dtpDeptFlight.Focus();
+            }
         }
     }
 }

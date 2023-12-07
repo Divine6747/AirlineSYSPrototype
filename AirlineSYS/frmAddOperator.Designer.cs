@@ -69,7 +69,7 @@
             // 
             this.btnOperatorConfirm.BackColor = System.Drawing.Color.Plum;
             this.btnOperatorConfirm.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnOperatorConfirm.Location = new System.Drawing.Point(311, 398);
+            this.btnOperatorConfirm.Location = new System.Drawing.Point(311, 400);
             this.btnOperatorConfirm.Name = "btnOperatorConfirm";
             this.btnOperatorConfirm.Size = new System.Drawing.Size(174, 38);
             this.btnOperatorConfirm.TabIndex = 13;
@@ -89,7 +89,7 @@
             this.grpOperatorDetails.Controls.Add(this.txtOperatorCode);
             this.grpOperatorDetails.Controls.Add(this.lblOperatorCode);
             this.grpOperatorDetails.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.grpOperatorDetails.Location = new System.Drawing.Point(31, 77);
+            this.grpOperatorDetails.Location = new System.Drawing.Point(31, 79);
             this.grpOperatorDetails.Name = "grpOperatorDetails";
             this.grpOperatorDetails.Size = new System.Drawing.Size(749, 304);
             this.grpOperatorDetails.TabIndex = 12;
@@ -253,7 +253,7 @@
             // 
             this.lblAddAirport.AutoSize = true;
             this.lblAddAirport.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblAddAirport.Location = new System.Drawing.Point(26, 26);
+            this.lblAddAirport.Location = new System.Drawing.Point(26, 28);
             this.lblAddAirport.Name = "lblAddAirport";
             this.lblAddAirport.Size = new System.Drawing.Size(140, 30);
             this.lblAddAirport.TabIndex = 11;
