@@ -293,6 +293,7 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frmAddAirport";
             this.Text = "Add Airport";
+            this.Load += new System.EventHandler(this.frmAddAirport_Load);
             this.grpAirportAddress.ResumeLayout(false);
             this.grpAirportAddress.PerformLayout();
             this.grpAirportDetails.ResumeLayout(false);

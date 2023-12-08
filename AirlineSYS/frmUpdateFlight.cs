@@ -182,16 +182,12 @@ namespace AirlineSYS
                     grpUpdateFlightDetails.Visible = true;
                 }
 
-                /*cboArrAirportFlight.SelectedIndex = -1;
-                cboDeptAirportFlight.SelectedIndex = -1;
-                cboOperatorCodeFlight.SelectedIndex = -1;
-                cboDeptTime.SelectedIndex = -1;
-                txtTicketPriceFlight.Clear();
-                txtNumFlightSeats.Clear();
-                **/
             }
         }
 
+        private void frmUpdateFlight_Load(object sender, EventArgs e)
+        {
 
+        }
     }
 }
