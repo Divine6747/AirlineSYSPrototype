@@ -363,7 +363,6 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frmUpdateFlight";
             this.Text = "Update Flight";
-            this.Load += new System.EventHandler(this.frmUpdateFlight_Load);
             this.grpUpdateFlightDetails.ResumeLayout(false);
             this.grpUpdateFlightDetails.PerformLayout();
             this.ResumeLayout(false);

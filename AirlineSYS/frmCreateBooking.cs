@@ -23,11 +23,6 @@ namespace AirlineSYS
             this.parent = parent;
         }
 
-        private void frmCreateBooking_Load(object sender, EventArgs e)
-        {
-
-        }
-
         private void btnAirportConfirm_Click(object sender, EventArgs e)
         {
 
@@ -84,7 +79,7 @@ namespace AirlineSYS
                 return;
             }
 
-            else if (!(txtCardName.Text.All(char.IsUpper) && txtCardName.Text.Length > 25) || !txtCardName.Text.All(char.IsLetter))
+            else if (!(txtCardName.Text.All(char.IsUpper) && txtCardName.Text.Length > 25) || !txtCardName.Text.All(char.IsLetter) )
             {
                 MessageBox.Show("Card Name must be a number and MAXIMUM 25 letters", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 txtCardName.Focus();
@@ -109,24 +104,43 @@ namespace AirlineSYS
                 txtCVC.Focus();
                 return;
             }
+            else if (txtCreateBookingEmail.Text.All(char.IsDigit) || txtCreateBookingEmail.Text.Length > 45)
+            {
+                MessageBox.Show("Airport Email must can not be Numeric and MAXIMUM length of 45", "Error!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                txtCreateBookingEmail.Focus();
+                return;
+            }
+
+
+            string email = txtCreateBookingEmail.Text;
+
+            string emailPattern = @"^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$";
+
+            if (!System.Text.RegularExpressions.Regex.IsMatch(email, emailPattern))
+            {
+                MessageBox.Show("Invalid email format!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                txtCreateBookingEmail.Focus();
+                return;
+            }
             else
             {
                 MessageBox.Show("Flight has been booked", "Success !!!", MessageBoxButtons.OK, MessageBoxIcon.Information);
-
+                txtNumBaggage.Clear();
+                txtForeName.Clear();
+                txtSurname.Clear();
+                dtpDOB.Text = "";
+                txtCreateBookingEmail.Clear();
+                txtCreateBooingPhone.Clear();
+                txtCreateBookingEircode.Clear();
+                txtCardName.Clear();
+                txtCardNumber.Clear();
+                dtpExpireEndsCreateBooking.Text = "";
+                cboDeptAirportBooking.Text = "";
+                cboArrAirportBooking.Text = "";
+            
             }
 
-            txtNumBaggage.Clear();
-            txtForeName.Clear();
-            txtSurname.Clear();
-            dtpDOB.Text = "";
-            txtCreateBookingEmail.Clear();
-            txtCreateBooingPhone.Clear();
-            txtCreateBookingEircode.Clear();
-            txtCardName.Clear();
-            txtCardNumber.Clear();
-            dtpExpireEndsCreateBooking.Text = "";
-            cboDeptAirportBooking.Text = "";
-            cboArrAirportBooking.Text = "";
+
         }
 
         private void munBack_Click(object sender, EventArgs e)

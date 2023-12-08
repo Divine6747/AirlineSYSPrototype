@@ -79,10 +79,11 @@
             this.munBack.AutoSize = true;
             this.munBack.BackColor = System.Drawing.Color.Violet;
             this.munBack.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.munBack.Location = new System.Drawing.Point(740, 1);
+            this.munBack.Location = new System.Drawing.Point(987, 1);
+            this.munBack.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.munBack.Name = "munBack";
-            this.munBack.Padding = new System.Windows.Forms.Padding(10, 0, 10, 0);
-            this.munBack.Size = new System.Drawing.Size(60, 20);
+            this.munBack.Padding = new System.Windows.Forms.Padding(13, 0, 13, 0);
+            this.munBack.Size = new System.Drawing.Size(77, 25);
             this.munBack.TabIndex = 7;
             this.munBack.Text = "Back";
             this.munBack.Click += new System.EventHandler(this.munBack_Click);
@@ -90,37 +91,41 @@
             // mnuUpdateBooking
             // 
             this.mnuUpdateBooking.BackColor = System.Drawing.Color.Plum;
+            this.mnuUpdateBooking.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.mnuUpdateBooking.Location = new System.Drawing.Point(0, 0);
             this.mnuUpdateBooking.Name = "mnuUpdateBooking";
             this.mnuUpdateBooking.Padding = new System.Windows.Forms.Padding(0);
-            this.mnuUpdateBooking.Size = new System.Drawing.Size(800, 24);
+            this.mnuUpdateBooking.Size = new System.Drawing.Size(1067, 24);
             this.mnuUpdateBooking.TabIndex = 6;
             // 
             // lblAddAirport
             // 
             this.lblAddAirport.AutoSize = true;
             this.lblAddAirport.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblAddAirport.Location = new System.Drawing.Point(25, 28);
+            this.lblAddAirport.Location = new System.Drawing.Point(33, 34);
+            this.lblAddAirport.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblAddAirport.Name = "lblAddAirport";
-            this.lblAddAirport.Size = new System.Drawing.Size(161, 30);
+            this.lblAddAirport.Size = new System.Drawing.Size(210, 37);
             this.lblAddAirport.TabIndex = 17;
             this.lblAddAirport.Text = "Update Booking";
             // 
             // txtBookingID
             // 
             this.txtBookingID.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtBookingID.Location = new System.Drawing.Point(294, 67);
+            this.txtBookingID.Location = new System.Drawing.Point(392, 82);
+            this.txtBookingID.Margin = new System.Windows.Forms.Padding(4);
             this.txtBookingID.Name = "txtBookingID";
-            this.txtBookingID.Size = new System.Drawing.Size(173, 29);
+            this.txtBookingID.Size = new System.Drawing.Size(229, 34);
             this.txtBookingID.TabIndex = 25;
             // 
             // label9
             // 
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(174, 71);
+            this.label9.Location = new System.Drawing.Point(232, 87);
+            this.label9.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(86, 21);
+            this.label9.Size = new System.Drawing.Size(109, 28);
             this.label9.TabIndex = 24;
             this.label9.Text = "Booking ID";
             // 
@@ -128,12 +133,14 @@
             // 
             this.btnUpadateBookingConfirm.BackColor = System.Drawing.Color.Plum;
             this.btnUpadateBookingConfirm.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnUpadateBookingConfirm.Location = new System.Drawing.Point(321, 752);
+            this.btnUpadateBookingConfirm.Location = new System.Drawing.Point(428, 926);
+            this.btnUpadateBookingConfirm.Margin = new System.Windows.Forms.Padding(4);
             this.btnUpadateBookingConfirm.Name = "btnUpadateBookingConfirm";
-            this.btnUpadateBookingConfirm.Size = new System.Drawing.Size(174, 38);
+            this.btnUpadateBookingConfirm.Size = new System.Drawing.Size(232, 47);
             this.btnUpadateBookingConfirm.TabIndex = 27;
             this.btnUpadateBookingConfirm.Text = "CONFIRM";
             this.btnUpadateBookingConfirm.UseVisualStyleBackColor = false;
+            this.btnUpadateBookingConfirm.Click += new System.EventHandler(this.btnUpadateBookingConfirm_Click);
             // 
             // grpCreateBookingDetails
             // 
@@ -149,9 +156,11 @@
             this.grpCreateBookingDetails.Controls.Add(this.lblAirportName);
             this.grpCreateBookingDetails.Controls.Add(this.lblAirportCode);
             this.grpCreateBookingDetails.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.grpCreateBookingDetails.Location = new System.Drawing.Point(26, 108);
+            this.grpCreateBookingDetails.Location = new System.Drawing.Point(35, 133);
+            this.grpCreateBookingDetails.Margin = new System.Windows.Forms.Padding(4);
             this.grpCreateBookingDetails.Name = "grpCreateBookingDetails";
-            this.grpCreateBookingDetails.Size = new System.Drawing.Size(749, 637);
+            this.grpCreateBookingDetails.Padding = new System.Windows.Forms.Padding(4);
+            this.grpCreateBookingDetails.Size = new System.Drawing.Size(999, 784);
             this.grpCreateBookingDetails.TabIndex = 26;
             this.grpCreateBookingDetails.TabStop = false;
             this.grpCreateBookingDetails.Text = "Create Booking Details";
@@ -167,9 +176,10 @@
             "DFW Dallas",
             "SNN - Shannon",
             "PVG - Shanghai"});
-            this.cboArrAirportBooking.Location = new System.Drawing.Point(550, 35);
+            this.cboArrAirportBooking.Location = new System.Drawing.Point(733, 43);
+            this.cboArrAirportBooking.Margin = new System.Windows.Forms.Padding(4);
             this.cboArrAirportBooking.Name = "cboArrAirportBooking";
-            this.cboArrAirportBooking.Size = new System.Drawing.Size(171, 29);
+            this.cboArrAirportBooking.Size = new System.Drawing.Size(227, 36);
             this.cboArrAirportBooking.TabIndex = 43;
             // 
             // cboDeptAirportBooking
@@ -182,45 +192,48 @@
             "DFW Dallas",
             "SNN - Shannon",
             "PVG - Shanghai"});
-            this.cboDeptAirportBooking.Location = new System.Drawing.Point(192, 35);
+            this.cboDeptAirportBooking.Location = new System.Drawing.Point(256, 43);
+            this.cboDeptAirportBooking.Margin = new System.Windows.Forms.Padding(4);
             this.cboDeptAirportBooking.Name = "cboDeptAirportBooking";
-            this.cboDeptAirportBooking.Size = new System.Drawing.Size(175, 29);
+            this.cboDeptAirportBooking.Size = new System.Drawing.Size(232, 36);
             this.cboDeptAirportBooking.TabIndex = 42;
             // 
             // dtpReturnDate
             // 
             this.dtpReturnDate.CustomFormat = "        dd-mm-yyyy";
             this.dtpReturnDate.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dtpReturnDate.Location = new System.Drawing.Point(550, 93);
-            this.dtpReturnDate.Margin = new System.Windows.Forms.Padding(2);
+            this.dtpReturnDate.Location = new System.Drawing.Point(733, 114);
+            this.dtpReturnDate.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dtpReturnDate.Name = "dtpReturnDate";
-            this.dtpReturnDate.Size = new System.Drawing.Size(173, 29);
+            this.dtpReturnDate.Size = new System.Drawing.Size(229, 34);
             this.dtpReturnDate.TabIndex = 41;
             // 
             // dtpDeptDate
             // 
             this.dtpDeptDate.CustomFormat = "        dd-mmyyyy";
             this.dtpDeptDate.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dtpDeptDate.Location = new System.Drawing.Point(192, 93);
-            this.dtpDeptDate.Margin = new System.Windows.Forms.Padding(2);
+            this.dtpDeptDate.Location = new System.Drawing.Point(256, 114);
+            this.dtpDeptDate.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dtpDeptDate.Name = "dtpDeptDate";
-            this.dtpDeptDate.Size = new System.Drawing.Size(173, 29);
+            this.dtpDeptDate.Size = new System.Drawing.Size(229, 34);
             this.dtpDeptDate.TabIndex = 40;
             // 
             // txtNumBaggage
             // 
-            this.txtNumBaggage.Location = new System.Drawing.Point(193, 147);
+            this.txtNumBaggage.Location = new System.Drawing.Point(257, 181);
+            this.txtNumBaggage.Margin = new System.Windows.Forms.Padding(4);
             this.txtNumBaggage.Name = "txtNumBaggage";
-            this.txtNumBaggage.Size = new System.Drawing.Size(173, 29);
+            this.txtNumBaggage.Size = new System.Drawing.Size(229, 34);
             this.txtNumBaggage.TabIndex = 38;
             // 
             // label7
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(27, 153);
+            this.label7.Location = new System.Drawing.Point(36, 188);
+            this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(140, 18);
+            this.label7.Size = new System.Drawing.Size(180, 24);
             this.label7.TabIndex = 39;
             this.label7.Text = "Number of Baggage";
             // 
@@ -239,9 +252,11 @@
             this.grpPersonalCreateBookingDetails.Controls.Add(this.txtSurname);
             this.grpPersonalCreateBookingDetails.Controls.Add(this.label1);
             this.grpPersonalCreateBookingDetails.Controls.Add(this.label3);
-            this.grpPersonalCreateBookingDetails.Location = new System.Drawing.Point(28, 197);
+            this.grpPersonalCreateBookingDetails.Location = new System.Drawing.Point(37, 242);
+            this.grpPersonalCreateBookingDetails.Margin = new System.Windows.Forms.Padding(4);
             this.grpPersonalCreateBookingDetails.Name = "grpPersonalCreateBookingDetails";
-            this.grpPersonalCreateBookingDetails.Size = new System.Drawing.Size(692, 413);
+            this.grpPersonalCreateBookingDetails.Padding = new System.Windows.Forms.Padding(4);
+            this.grpPersonalCreateBookingDetails.Size = new System.Drawing.Size(923, 508);
             this.grpPersonalCreateBookingDetails.TabIndex = 35;
             this.grpPersonalCreateBookingDetails.TabStop = false;
             this.grpPersonalCreateBookingDetails.Text = "Personal Details";
@@ -250,10 +265,10 @@
             // 
             this.dtpDOB.CustomFormat = "         dd-mm-yyy";
             this.dtpDOB.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dtpDOB.Location = new System.Drawing.Point(146, 109);
-            this.dtpDOB.Margin = new System.Windows.Forms.Padding(2);
+            this.dtpDOB.Location = new System.Drawing.Point(195, 134);
+            this.dtpDOB.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dtpDOB.Name = "dtpDOB";
-            this.dtpDOB.Size = new System.Drawing.Size(173, 29);
+            this.dtpDOB.Size = new System.Drawing.Size(229, 34);
             this.dtpDOB.TabIndex = 41;
             // 
             // grpPaymentDetails
@@ -266,9 +281,11 @@
             this.grpPaymentDetails.Controls.Add(this.txtCardNumber);
             this.grpPaymentDetails.Controls.Add(this.label13);
             this.grpPaymentDetails.Controls.Add(this.label14);
-            this.grpPaymentDetails.Location = new System.Drawing.Point(40, 211);
+            this.grpPaymentDetails.Location = new System.Drawing.Point(53, 260);
+            this.grpPaymentDetails.Margin = new System.Windows.Forms.Padding(4);
             this.grpPaymentDetails.Name = "grpPaymentDetails";
-            this.grpPaymentDetails.Size = new System.Drawing.Size(625, 171);
+            this.grpPaymentDetails.Padding = new System.Windows.Forms.Padding(4);
+            this.grpPaymentDetails.Size = new System.Drawing.Size(833, 210);
             this.grpPaymentDetails.TabIndex = 39;
             this.grpPaymentDetails.TabStop = false;
             this.grpPaymentDetails.Text = "Payment Details";
@@ -278,33 +295,36 @@
             this.dtpExpireEndsCreateBooking.CustomFormat = "MM/yy";
             this.dtpExpireEndsCreateBooking.DropDownAlign = System.Windows.Forms.LeftRightAlignment.Right;
             this.dtpExpireEndsCreateBooking.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dtpExpireEndsCreateBooking.Location = new System.Drawing.Point(248, 119);
-            this.dtpExpireEndsCreateBooking.Margin = new System.Windows.Forms.Padding(2);
+            this.dtpExpireEndsCreateBooking.Location = new System.Drawing.Point(331, 146);
+            this.dtpExpireEndsCreateBooking.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dtpExpireEndsCreateBooking.Name = "dtpExpireEndsCreateBooking";
-            this.dtpExpireEndsCreateBooking.Size = new System.Drawing.Size(74, 29);
+            this.dtpExpireEndsCreateBooking.Size = new System.Drawing.Size(97, 34);
             this.dtpExpireEndsCreateBooking.TabIndex = 41;
             // 
             // txtCardName
             // 
-            this.txtCardName.Location = new System.Drawing.Point(113, 51);
+            this.txtCardName.Location = new System.Drawing.Point(151, 63);
+            this.txtCardName.Margin = new System.Windows.Forms.Padding(4);
             this.txtCardName.Name = "txtCardName";
-            this.txtCardName.Size = new System.Drawing.Size(173, 29);
+            this.txtCardName.Size = new System.Drawing.Size(229, 34);
             this.txtCardName.TabIndex = 21;
             // 
             // txtCVC
             // 
-            this.txtCVC.Location = new System.Drawing.Point(426, 119);
+            this.txtCVC.Location = new System.Drawing.Point(568, 146);
+            this.txtCVC.Margin = new System.Windows.Forms.Padding(4);
             this.txtCVC.Name = "txtCVC";
-            this.txtCVC.Size = new System.Drawing.Size(50, 29);
+            this.txtCVC.Size = new System.Drawing.Size(65, 34);
             this.txtCVC.TabIndex = 34;
             // 
             // label11
             // 
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.Location = new System.Drawing.Point(336, 60);
+            this.label11.Location = new System.Drawing.Point(448, 74);
+            this.label11.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(97, 18);
+            this.label11.Size = new System.Drawing.Size(124, 24);
             this.label11.TabIndex = 24;
             this.label11.Text = "Card Number";
             // 
@@ -312,26 +332,29 @@
             // 
             this.label12.AutoSize = true;
             this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.Location = new System.Drawing.Point(372, 123);
+            this.label12.Location = new System.Drawing.Point(496, 151);
+            this.label12.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(39, 18);
+            this.label12.Size = new System.Drawing.Size(49, 24);
             this.label12.TabIndex = 33;
             this.label12.Text = "CVC";
             // 
             // txtCardNumber
             // 
-            this.txtCardNumber.Location = new System.Drawing.Point(440, 57);
+            this.txtCardNumber.Location = new System.Drawing.Point(587, 70);
+            this.txtCardNumber.Margin = new System.Windows.Forms.Padding(4);
             this.txtCardNumber.Name = "txtCardNumber";
-            this.txtCardNumber.Size = new System.Drawing.Size(173, 29);
+            this.txtCardNumber.Size = new System.Drawing.Size(229, 34);
             this.txtCardNumber.TabIndex = 25;
             // 
             // label13
             // 
             this.label13.AutoSize = true;
             this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.Location = new System.Drawing.Point(21, 57);
+            this.label13.Location = new System.Drawing.Point(28, 70);
+            this.label13.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(84, 18);
+            this.label13.Size = new System.Drawing.Size(106, 24);
             this.label13.TabIndex = 32;
             this.label13.Text = "Card Name";
             // 
@@ -339,67 +362,75 @@
             // 
             this.label14.AutoSize = true;
             this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label14.Location = new System.Drawing.Point(136, 123);
+            this.label14.Location = new System.Drawing.Point(181, 151);
+            this.label14.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(95, 18);
+            this.label14.Size = new System.Drawing.Size(123, 24);
             this.label14.TabIndex = 26;
             this.label14.Text = "Expires Ends";
             // 
             // txtCreateBookingEircode
             // 
-            this.txtCreateBookingEircode.Location = new System.Drawing.Point(479, 161);
+            this.txtCreateBookingEircode.Location = new System.Drawing.Point(639, 198);
+            this.txtCreateBookingEircode.Margin = new System.Windows.Forms.Padding(4);
             this.txtCreateBookingEircode.Name = "txtCreateBookingEircode";
-            this.txtCreateBookingEircode.Size = new System.Drawing.Size(173, 29);
+            this.txtCreateBookingEircode.Size = new System.Drawing.Size(229, 34);
             this.txtCreateBookingEircode.TabIndex = 38;
             // 
             // label6
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(376, 161);
+            this.label6.Location = new System.Drawing.Point(501, 198);
+            this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(59, 18);
+            this.label6.Size = new System.Drawing.Size(76, 24);
             this.label6.TabIndex = 37;
             this.label6.Text = "Eircode";
             // 
             // txtCreateBooingPhone
             // 
-            this.txtCreateBooingPhone.Location = new System.Drawing.Point(146, 160);
+            this.txtCreateBooingPhone.Location = new System.Drawing.Point(195, 197);
+            this.txtCreateBooingPhone.Margin = new System.Windows.Forms.Padding(4);
             this.txtCreateBooingPhone.Name = "txtCreateBooingPhone";
-            this.txtCreateBooingPhone.Size = new System.Drawing.Size(173, 29);
+            this.txtCreateBooingPhone.Size = new System.Drawing.Size(229, 34);
             this.txtCreateBooingPhone.TabIndex = 36;
             // 
             // label5
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(41, 161);
+            this.label5.Location = new System.Drawing.Point(55, 198);
+            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(51, 18);
+            this.label5.Size = new System.Drawing.Size(66, 24);
             this.label5.TabIndex = 35;
             this.label5.Text = "Phone";
             // 
             // txtForeName
             // 
-            this.txtForeName.Location = new System.Drawing.Point(146, 50);
+            this.txtForeName.Location = new System.Drawing.Point(195, 62);
+            this.txtForeName.Margin = new System.Windows.Forms.Padding(4);
             this.txtForeName.Name = "txtForeName";
-            this.txtForeName.Size = new System.Drawing.Size(173, 29);
+            this.txtForeName.Size = new System.Drawing.Size(229, 34);
             this.txtForeName.TabIndex = 21;
             // 
             // txtCreateBookingEmail
             // 
-            this.txtCreateBookingEmail.Location = new System.Drawing.Point(479, 109);
+            this.txtCreateBookingEmail.Location = new System.Drawing.Point(639, 134);
+            this.txtCreateBookingEmail.Margin = new System.Windows.Forms.Padding(4);
             this.txtCreateBookingEmail.Name = "txtCreateBookingEmail";
-            this.txtCreateBookingEmail.Size = new System.Drawing.Size(173, 29);
+            this.txtCreateBookingEmail.Size = new System.Drawing.Size(229, 34);
             this.txtCreateBookingEmail.TabIndex = 34;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(376, 55);
+            this.label2.Location = new System.Drawing.Point(501, 68);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(68, 18);
+            this.label2.Size = new System.Drawing.Size(87, 24);
             this.label2.TabIndex = 24;
             this.label2.Text = "Surname";
             // 
@@ -407,26 +438,29 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(376, 114);
+            this.label4.Location = new System.Drawing.Point(501, 140);
+            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(45, 18);
+            this.label4.Size = new System.Drawing.Size(57, 24);
             this.label4.TabIndex = 33;
             this.label4.Text = "Email";
             // 
             // txtSurname
             // 
-            this.txtSurname.Location = new System.Drawing.Point(479, 50);
+            this.txtSurname.Location = new System.Drawing.Point(639, 62);
+            this.txtSurname.Margin = new System.Windows.Forms.Padding(4);
             this.txtSurname.Name = "txtSurname";
-            this.txtSurname.Size = new System.Drawing.Size(173, 29);
+            this.txtSurname.Size = new System.Drawing.Size(229, 34);
             this.txtSurname.TabIndex = 25;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(41, 55);
+            this.label1.Location = new System.Drawing.Point(55, 68);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(76, 18);
+            this.label1.Size = new System.Drawing.Size(98, 24);
             this.label1.TabIndex = 32;
             this.label1.Text = "Forename";
             // 
@@ -434,9 +468,10 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(41, 114);
+            this.label3.Location = new System.Drawing.Point(55, 140);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(41, 18);
+            this.label3.Size = new System.Drawing.Size(50, 24);
             this.label3.TabIndex = 26;
             this.label3.Text = "DOB\r\n";
             // 
@@ -444,9 +479,10 @@
             // 
             this.lblAirportEmail.AutoSize = true;
             this.lblAirportEmail.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblAirportEmail.Location = new System.Drawing.Point(410, 100);
+            this.lblAirportEmail.Location = new System.Drawing.Point(547, 123);
+            this.lblAirportEmail.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblAirportEmail.Name = "lblAirportEmail";
-            this.lblAirportEmail.Size = new System.Drawing.Size(87, 18);
+            this.lblAirportEmail.Size = new System.Drawing.Size(109, 24);
             this.lblAirportEmail.TabIndex = 31;
             this.lblAirportEmail.Text = "Return Date";
             // 
@@ -454,9 +490,10 @@
             // 
             this.lblAirportPhone.AutoSize = true;
             this.lblAirportPhone.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblAirportPhone.Location = new System.Drawing.Point(27, 97);
+            this.lblAirportPhone.Location = new System.Drawing.Point(36, 119);
+            this.lblAirportPhone.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblAirportPhone.Name = "lblAirportPhone";
-            this.lblAirportPhone.Size = new System.Drawing.Size(108, 18);
+            this.lblAirportPhone.Size = new System.Drawing.Size(136, 24);
             this.lblAirportPhone.TabIndex = 29;
             this.lblAirportPhone.Text = "Departure Date";
             // 
@@ -464,9 +501,10 @@
             // 
             this.lblAirportName.AutoSize = true;
             this.lblAirportName.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblAirportName.Location = new System.Drawing.Point(411, 40);
+            this.lblAirportName.Location = new System.Drawing.Point(548, 49);
+            this.lblAirportName.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblAirportName.Name = "lblAirportName";
-            this.lblAirportName.Size = new System.Drawing.Size(95, 18);
+            this.lblAirportName.Size = new System.Drawing.Size(122, 24);
             this.lblAirportName.TabIndex = 9;
             this.lblAirportName.Text = "Arrival Airport";
             // 
@@ -474,9 +512,10 @@
             // 
             this.lblAirportCode.AutoSize = true;
             this.lblAirportCode.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblAirportCode.Location = new System.Drawing.Point(28, 40);
+            this.lblAirportCode.Location = new System.Drawing.Point(37, 49);
+            this.lblAirportCode.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblAirportCode.Name = "lblAirportCode";
-            this.lblAirportCode.Size = new System.Drawing.Size(120, 18);
+            this.lblAirportCode.Size = new System.Drawing.Size(153, 24);
             this.lblAirportCode.TabIndex = 7;
             this.lblAirportCode.Text = "Departure Airport";
             // 
@@ -484,18 +523,20 @@
             // 
             this.btnBookingIDSearch.BackColor = System.Drawing.Color.Plum;
             this.btnBookingIDSearch.Font = new System.Drawing.Font("Segoe UI", 11F);
-            this.btnBookingIDSearch.Location = new System.Drawing.Point(501, 67);
+            this.btnBookingIDSearch.Location = new System.Drawing.Point(668, 82);
+            this.btnBookingIDSearch.Margin = new System.Windows.Forms.Padding(4);
             this.btnBookingIDSearch.Name = "btnBookingIDSearch";
-            this.btnBookingIDSearch.Size = new System.Drawing.Size(126, 28);
+            this.btnBookingIDSearch.Size = new System.Drawing.Size(168, 34);
             this.btnBookingIDSearch.TabIndex = 28;
             this.btnBookingIDSearch.Text = "SEARCH";
             this.btnBookingIDSearch.UseVisualStyleBackColor = false;
+            this.btnBookingIDSearch.Click += new System.EventHandler(this.btnBookingIDSearch_Click_1);
             // 
             // frmUpdateBooking
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 814);
+            this.ClientSize = new System.Drawing.Size(1067, 1002);
             this.Controls.Add(this.btnBookingIDSearch);
             this.Controls.Add(this.btnUpadateBookingConfirm);
             this.Controls.Add(this.grpCreateBookingDetails);
@@ -505,6 +546,7 @@
             this.Controls.Add(this.munBack);
             this.Controls.Add(this.mnuUpdateBooking);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "frmUpdateBooking";
             this.Text = "Update Booking";
             this.grpCreateBookingDetails.ResumeLayout(false);

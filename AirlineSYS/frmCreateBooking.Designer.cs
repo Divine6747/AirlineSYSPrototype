@@ -471,7 +471,6 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frmCreateBooking";
             this.Text = "Create Booking";
-            this.Load += new System.EventHandler(this.frmCreateBooking_Load);
             this.grpPersonalCreateBookingDetails.ResumeLayout(false);
             this.grpPersonalCreateBookingDetails.PerformLayout();
             this.grpPaymentDetails.ResumeLayout(false);

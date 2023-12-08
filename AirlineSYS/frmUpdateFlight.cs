@@ -185,9 +185,5 @@ namespace AirlineSYS
             }
         }
 
-        private void frmUpdateFlight_Load(object sender, EventArgs e)
-        {
-
-        }
     }
 }

@@ -127,9 +127,5 @@ namespace AirlineSYS
 
         }
 
-        private void frmAddAirport_Load(object sender, EventArgs e)
-        {
-
-        }
     }
 }
