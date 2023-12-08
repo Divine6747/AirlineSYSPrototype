@@ -108,12 +108,13 @@ namespace AirlineSYS
 
 
 
-            else if (!decimal.TryParse(txtTicketPriceFlight.Text, out ticketPriceFlight))
+            else if (!decimal.TryParse(txtTicketPriceFlight.Text, out ticketPriceFlight) || txtTicketPriceFlight.Text.Length > 999)
             {
-                MessageBox.Show("Ticket price must be a valid decimal value", "Error!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Ticket price must be a valid decimal format and MAXIMUM value of €999.00", "Error!", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 txtTicketPriceFlight.Focus();
                 return;
             }
+
 
             else
             {

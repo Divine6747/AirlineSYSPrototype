@@ -64,7 +64,7 @@ namespace AirlineSYS
             }
 
 
-            if (txtOperatorStreet.Text.Length > 40 || !txtOperatorStreet.Text.All(char.IsLetterOrDigit))
+            if (txtOperatorStreet.Text.Length > 40 || !txtOperatorStreet.Text.All(c => char.IsLetterOrDigit(c) || char.IsWhiteSpace(c)))
             {
                 MessageBox.Show("Operator Street has a MAXIMUM of 40 characters and contain only alphanumeric characters.", "Error!", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 txtOperatorStreet.Focus();

@@ -37,10 +37,10 @@
             this.lblRouteDuration = new System.Windows.Forms.Label();
             this.txtDurationRoute = new System.Windows.Forms.TextBox();
             this.grpOperatorDetails = new System.Windows.Forms.GroupBox();
+            this.label1 = new System.Windows.Forms.Label();
             this.cboArrAirportCreteRoute = new System.Windows.Forms.ComboBox();
             this.cboDeptAirportCreteRoute = new System.Windows.Forms.ComboBox();
             this.btnCreateRouteConfirm = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
             this.grpOperatorDetails.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -49,10 +49,11 @@
             this.munBack.AutoSize = true;
             this.munBack.BackColor = System.Drawing.Color.Violet;
             this.munBack.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.munBack.Location = new System.Drawing.Point(739, -1);
+            this.munBack.Location = new System.Drawing.Point(985, -1);
+            this.munBack.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.munBack.Name = "munBack";
-            this.munBack.Padding = new System.Windows.Forms.Padding(10, 2, 10, 2);
-            this.munBack.Size = new System.Drawing.Size(60, 24);
+            this.munBack.Padding = new System.Windows.Forms.Padding(13, 2, 13, 2);
+            this.munBack.Size = new System.Drawing.Size(77, 29);
             this.munBack.TabIndex = 5;
             this.munBack.Text = "Back";
             this.munBack.Click += new System.EventHandler(this.munBack_Click);
@@ -60,19 +61,21 @@
             // mnuCreateRoute
             // 
             this.mnuCreateRoute.BackColor = System.Drawing.Color.Plum;
+            this.mnuCreateRoute.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.mnuCreateRoute.Location = new System.Drawing.Point(0, 0);
             this.mnuCreateRoute.Name = "mnuCreateRoute";
             this.mnuCreateRoute.Padding = new System.Windows.Forms.Padding(0);
-            this.mnuCreateRoute.Size = new System.Drawing.Size(800, 24);
+            this.mnuCreateRoute.Size = new System.Drawing.Size(1067, 24);
             this.mnuCreateRoute.TabIndex = 4;
             // 
             // lblAddAirport
             // 
             this.lblAddAirport.AutoSize = true;
             this.lblAddAirport.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblAddAirport.Location = new System.Drawing.Point(334, 30);
+            this.lblAddAirport.Location = new System.Drawing.Point(445, 37);
+            this.lblAddAirport.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblAddAirport.Name = "lblAddAirport";
-            this.lblAddAirport.Size = new System.Drawing.Size(133, 30);
+            this.lblAddAirport.Size = new System.Drawing.Size(170, 37);
             this.lblAddAirport.TabIndex = 14;
             this.lblAddAirport.Text = "Create Route";
             // 
@@ -80,38 +83,42 @@
             // 
             this.lblDepartAirport.AutoSize = true;
             this.lblDepartAirport.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblDepartAirport.Location = new System.Drawing.Point(82, 83);
+            this.lblDepartAirport.Location = new System.Drawing.Point(109, 102);
+            this.lblDepartAirport.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblDepartAirport.Name = "lblDepartAirport";
-            this.lblDepartAirport.Size = new System.Drawing.Size(133, 21);
+            this.lblDepartAirport.Size = new System.Drawing.Size(168, 28);
             this.lblDepartAirport.TabIndex = 7;
             this.lblDepartAirport.Text = "Departure Airport";
             // 
             // lblArrAirport
             // 
             this.lblArrAirport.AutoSize = true;
-            this.lblArrAirport.Font = new System.Drawing.Font("Open Sans", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblArrAirport.Location = new System.Drawing.Point(82, 142);
+            this.lblArrAirport.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblArrAirport.Location = new System.Drawing.Point(109, 175);
+            this.lblArrAirport.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblArrAirport.Name = "lblArrAirport";
-            this.lblArrAirport.Size = new System.Drawing.Size(106, 20);
+            this.lblArrAirport.Size = new System.Drawing.Size(122, 24);
             this.lblArrAirport.TabIndex = 9;
             this.lblArrAirport.Text = "Arrival Airport";
             // 
             // lblRouteDuration
             // 
             this.lblRouteDuration.AutoSize = true;
-            this.lblRouteDuration.Font = new System.Drawing.Font("Open Sans", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblRouteDuration.Location = new System.Drawing.Point(82, 200);
+            this.lblRouteDuration.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblRouteDuration.Location = new System.Drawing.Point(109, 246);
+            this.lblRouteDuration.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblRouteDuration.Name = "lblRouteDuration";
-            this.lblRouteDuration.Size = new System.Drawing.Size(70, 20);
+            this.lblRouteDuration.Size = new System.Drawing.Size(80, 24);
             this.lblRouteDuration.TabIndex = 17;
             this.lblRouteDuration.Text = "Duration";
             this.lblRouteDuration.Click += new System.EventHandler(this.lblOperatorPhone_Click);
             // 
             // txtDurationRoute
             // 
-            this.txtDurationRoute.Location = new System.Drawing.Point(269, 196);
+            this.txtDurationRoute.Location = new System.Drawing.Point(359, 241);
+            this.txtDurationRoute.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtDurationRoute.Name = "txtDurationRoute";
-            this.txtDurationRoute.Size = new System.Drawing.Size(147, 29);
+            this.txtDurationRoute.Size = new System.Drawing.Size(195, 34);
             this.txtDurationRoute.TabIndex = 17;
             // 
             // grpOperatorDetails
@@ -124,52 +131,49 @@
             this.grpOperatorDetails.Controls.Add(this.lblArrAirport);
             this.grpOperatorDetails.Controls.Add(this.lblDepartAirport);
             this.grpOperatorDetails.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.grpOperatorDetails.Location = new System.Drawing.Point(151, 78);
+            this.grpOperatorDetails.Location = new System.Drawing.Point(201, 96);
+            this.grpOperatorDetails.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.grpOperatorDetails.Name = "grpOperatorDetails";
-            this.grpOperatorDetails.Size = new System.Drawing.Size(499, 285);
+            this.grpOperatorDetails.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.grpOperatorDetails.Size = new System.Drawing.Size(665, 351);
             this.grpOperatorDetails.TabIndex = 15;
             this.grpOperatorDetails.TabStop = false;
             this.grpOperatorDetails.Text = "Route Details";
             this.grpOperatorDetails.Enter += new System.EventHandler(this.grpOperatorDetails_Enter);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(481, 245);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(0, 28);
+            this.label1.TabIndex = 19;
             // 
             // cboArrAirportCreteRoute
             // 
             this.cboArrAirportCreteRoute.FormattingEnabled = true;
             this.cboArrAirportCreteRoute.Items.AddRange(new object[] {
             "JFK",
-            "LHR",
             "CDG",
-            "SYD",
             "DXB",
             "PEK",
             "NRT",
-            "AMS",
             "YYZ",
             "FRA",
-            "SIN",
             "HKG",
             "ICN",
-            "MEX",
-            "IST",
-            "DFW",
             "MIA",
-            "SFO",
-            "ATL",
-            "BKK",
-            "MUC",
-            "YVR",
-            "LAX",
-            "ORD",
-            "MAD",
             "CGK",
             "SNN",
             "DUB",
             "SHA",
             "FCO",
             "BGY"});
-            this.cboArrAirportCreteRoute.Location = new System.Drawing.Point(269, 138);
+            this.cboArrAirportCreteRoute.Location = new System.Drawing.Point(359, 170);
+            this.cboArrAirportCreteRoute.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.cboArrAirportCreteRoute.Name = "cboArrAirportCreteRoute";
-            this.cboArrAirportCreteRoute.Size = new System.Drawing.Size(147, 29);
+            this.cboArrAirportCreteRoute.Size = new System.Drawing.Size(195, 36);
             this.cboArrAirportCreteRoute.TabIndex = 18;
             // 
             // cboDeptAirportCreteRoute
@@ -177,72 +181,52 @@
             this.cboDeptAirportCreteRoute.FormattingEnabled = true;
             this.cboDeptAirportCreteRoute.Items.AddRange(new object[] {
             "JFK",
-            "LHR",
             "CDG",
-            "SYD",
             "DXB",
             "PEK",
             "NRT",
-            "AMS",
             "YYZ",
             "FRA",
-            "SIN",
             "HKG",
             "ICN",
-            "MEX",
-            "IST",
-            "DFW",
             "MIA",
-            "SFO",
-            "ATL",
-            "BKK",
-            "MUC",
-            "YVR",
-            "LAX",
-            "ORD",
-            "MAD",
             "CGK",
             "SNN",
             "DUB",
             "SHA",
             "FCO",
             "BGY"});
-            this.cboDeptAirportCreteRoute.Location = new System.Drawing.Point(269, 79);
+            this.cboDeptAirportCreteRoute.Location = new System.Drawing.Point(359, 97);
+            this.cboDeptAirportCreteRoute.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.cboDeptAirportCreteRoute.Name = "cboDeptAirportCreteRoute";
-            this.cboDeptAirportCreteRoute.Size = new System.Drawing.Size(147, 29);
+            this.cboDeptAirportCreteRoute.Size = new System.Drawing.Size(195, 36);
             this.cboDeptAirportCreteRoute.TabIndex = 17;
             // 
             // btnCreateRouteConfirm
             // 
             this.btnCreateRouteConfirm.BackColor = System.Drawing.Color.Plum;
             this.btnCreateRouteConfirm.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCreateRouteConfirm.Location = new System.Drawing.Point(313, 399);
+            this.btnCreateRouteConfirm.Location = new System.Drawing.Point(417, 491);
+            this.btnCreateRouteConfirm.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnCreateRouteConfirm.Name = "btnCreateRouteConfirm";
-            this.btnCreateRouteConfirm.Size = new System.Drawing.Size(174, 38);
+            this.btnCreateRouteConfirm.Size = new System.Drawing.Size(232, 47);
             this.btnCreateRouteConfirm.TabIndex = 16;
             this.btnCreateRouteConfirm.Text = "CONFIRM";
             this.btnCreateRouteConfirm.UseVisualStyleBackColor = false;
             this.btnCreateRouteConfirm.Click += new System.EventHandler(this.btnCreateRouteConfirm_Click);
             // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(361, 199);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(0, 21);
-            this.label1.TabIndex = 19;
-            // 
             // frmCreateRoute
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(1067, 554);
             this.Controls.Add(this.btnCreateRouteConfirm);
             this.Controls.Add(this.grpOperatorDetails);
             this.Controls.Add(this.lblAddAirport);
             this.Controls.Add(this.munBack);
             this.Controls.Add(this.mnuCreateRoute);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "frmCreateRoute";
             this.Text = "Create Route";
             this.Load += new System.EventHandler(this.frmCreateRoute_Load);

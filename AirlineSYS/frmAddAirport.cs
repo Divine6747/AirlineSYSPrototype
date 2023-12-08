@@ -44,7 +44,7 @@ namespace AirlineSYS
                 return;
             }
 
-            if (txtAirportCode.Text.Length != 3 || !txtAirportCode.Text.All(char.IsUpper))
+            else if (txtAirportCode.Text.Length != 3 || !txtAirportCode.Text.All(char.IsUpper))
             {
                 MessageBox.Show("Airport Code must be a valid THREE UPPERCASE LETTER Airport Code.", "Error!", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 txtAirportCode.Focus();
@@ -52,36 +52,37 @@ namespace AirlineSYS
 
             }
 
-            if (txtAirportName.Text.Length > 60 || !txtAirportName.Text.All(char.IsLetter))
+            else if (txtAirportName.Text.Length > 60 || !txtAirportName.Text.All(char.IsLetter))
             {
-                MessageBox.Show("Airport Name may only contain letters wuth the maximum length of 60", "Error!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Airport Name may only contain letters with a maximum length of 60", "Error!", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 txtAirportName.Focus();
                 return;
             }
 
 
-            if (txtAirportStreet.Text.Length > 40 || !txtAirportStreet.Text.All(char.IsLetterOrDigit))
+            else if (txtAirportStreet.Text.Length > 40 || !txtAirportStreet.Text.All(c => char.IsLetterOrDigit(c) || char.IsWhiteSpace(c)))
             {
-                MessageBox.Show("Airport Street has a MAXIMUM of 40 characters and contain only alphanumeric characters.", "Error!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Airport Street has a MAXIMUM of 40 characters and can contain only alphanumeric characters and spaces.", "Error!", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 txtAirportStreet.Focus();
                 return;
             }
 
-            if (txtAirportCountry.Text.Length > 30 || !txtAirportCountry.Text.All(char.IsLetter))
+
+            else if (txtAirportCountry.Text.Length > 30 || !txtAirportCountry.Text.All(char.IsLetter))
             {
                 MessageBox.Show("Airport Country must be Alpha Numeric", "Error!", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 txtAirportCountry.Focus();
                 return;
             }
 
-            if (txtAirportEircode.Text.Length != 7 || !txtAirportEircode.Text.All(char.IsLetterOrDigit))
+            else if (txtAirportEircode.Text.Length != 7 || !txtAirportEircode.Text.All(char.IsLetterOrDigit))
             {
                 MessageBox.Show("Airport Eircode must be Alpha Numeric", "Error!", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 txtAirportEircode.Focus();
                 return;
             }
 
-            if (!(txtAirportPhone.Text.StartsWith("08") || txtAirportPhone.Text.StartsWith("+353")) || !(txtAirportPhone.Text.Length > 0 && txtAirportPhone.Text.Length <= 15) || !txtAirportPhone.Text.All(char.IsLetterOrDigit))
+            else if (!(txtAirportPhone.Text.StartsWith("08") || txtAirportPhone.Text.StartsWith("+353")) || !(txtAirportPhone.Text.Length > 0 && txtAirportPhone.Text.Length <= 15) || !txtAirportPhone.Text.All(char.IsLetterOrDigit))
             {
                 MessageBox.Show("Airport phone must be Numeric, Starts with (08 or +353 ) and Maxium 15 characters", "Error!", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 txtAirportPhone.Focus();
@@ -89,7 +90,7 @@ namespace AirlineSYS
             }
 
 
-            if (txtAirportEmail.Text.All(char.IsDigit) || txtAirportEmail.Text.Length > 45)
+            else if (txtAirportEmail.Text.All(char.IsDigit) || txtAirportEmail.Text.Length > 45)
             {
                 MessageBox.Show("Airport Email must can not be Numeric and MAXIMUM length of 45", "Error!", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 txtAirportEmail.Focus();
@@ -113,16 +114,21 @@ namespace AirlineSYS
             txtAirportCode.Clear();
             txtAirportName.Clear();
             txtAirportStreet.Clear();
-            txtAirportName.Clear();
             txtAirportCity.Clear();
             txtAirportCountry.Clear();
             txtAirportEircode.Clear();
             txtAirportPhone.Clear();
             txtAirportEmail.Clear();
+
         }
 
 
         private void frmAddAirport_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtAirportName_TextChanged(object sender, EventArgs e)
         {
 
         }

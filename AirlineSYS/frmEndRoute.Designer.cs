@@ -46,10 +46,11 @@
             this.munBack.AutoSize = true;
             this.munBack.BackColor = System.Drawing.Color.Violet;
             this.munBack.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.munBack.Location = new System.Drawing.Point(740, 1);
+            this.munBack.Location = new System.Drawing.Point(987, 1);
+            this.munBack.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.munBack.Name = "munBack";
-            this.munBack.Padding = new System.Windows.Forms.Padding(10, 0, 10, 0);
-            this.munBack.Size = new System.Drawing.Size(60, 20);
+            this.munBack.Padding = new System.Windows.Forms.Padding(13, 0, 13, 0);
+            this.munBack.Size = new System.Drawing.Size(77, 25);
             this.munBack.TabIndex = 5;
             this.munBack.Text = "Back";
             this.munBack.Click += new System.EventHandler(this.munBack_Click);
@@ -57,19 +58,21 @@
             // mnuEndRoute
             // 
             this.mnuEndRoute.BackColor = System.Drawing.Color.Plum;
+            this.mnuEndRoute.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.mnuEndRoute.Location = new System.Drawing.Point(0, 0);
             this.mnuEndRoute.Name = "mnuEndRoute";
             this.mnuEndRoute.Padding = new System.Windows.Forms.Padding(0);
-            this.mnuEndRoute.Size = new System.Drawing.Size(800, 24);
+            this.mnuEndRoute.Size = new System.Drawing.Size(1067, 30);
             this.mnuEndRoute.TabIndex = 4;
             // 
             // btnEndRouteConfirm
             // 
             this.btnEndRouteConfirm.BackColor = System.Drawing.Color.Plum;
             this.btnEndRouteConfirm.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnEndRouteConfirm.Location = new System.Drawing.Point(313, 400);
+            this.btnEndRouteConfirm.Location = new System.Drawing.Point(417, 492);
+            this.btnEndRouteConfirm.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnEndRouteConfirm.Name = "btnEndRouteConfirm";
-            this.btnEndRouteConfirm.Size = new System.Drawing.Size(174, 38);
+            this.btnEndRouteConfirm.Size = new System.Drawing.Size(232, 47);
             this.btnEndRouteConfirm.TabIndex = 19;
             this.btnEndRouteConfirm.Text = "CONFIRM";
             this.btnEndRouteConfirm.UseVisualStyleBackColor = false;
@@ -79,9 +82,11 @@
             // 
             this.grpEndRouteDetails.Controls.Add(this.lblEndRouteDetails);
             this.grpEndRouteDetails.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.grpEndRouteDetails.Location = new System.Drawing.Point(129, 126);
+            this.grpEndRouteDetails.Location = new System.Drawing.Point(172, 155);
+            this.grpEndRouteDetails.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.grpEndRouteDetails.Name = "grpEndRouteDetails";
-            this.grpEndRouteDetails.Size = new System.Drawing.Size(542, 268);
+            this.grpEndRouteDetails.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.grpEndRouteDetails.Size = new System.Drawing.Size(723, 330);
             this.grpEndRouteDetails.TabIndex = 18;
             this.grpEndRouteDetails.TabStop = false;
             this.grpEndRouteDetails.Text = "End Route Details";
@@ -91,9 +96,10 @@
             // 
             this.lblEndRouteDetails.AutoSize = true;
             this.lblEndRouteDetails.Font = new System.Drawing.Font("Segoe UI", 17F);
-            this.lblEndRouteDetails.Location = new System.Drawing.Point(101, 50);
+            this.lblEndRouteDetails.Location = new System.Drawing.Point(135, 62);
+            this.lblEndRouteDetails.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblEndRouteDetails.Name = "lblEndRouteDetails";
-            this.lblEndRouteDetails.Size = new System.Drawing.Size(341, 31);
+            this.lblEndRouteDetails.Size = new System.Drawing.Size(433, 40);
             this.lblEndRouteDetails.TabIndex = 0;
             this.lblEndRouteDetails.Text = "NO ROUTE HAS BEEN SELECTED";
             // 
@@ -101,9 +107,10 @@
             // 
             this.lblAddAirport.AutoSize = true;
             this.lblAddAirport.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblAddAirport.Location = new System.Drawing.Point(334, 27);
+            this.lblAddAirport.Location = new System.Drawing.Point(445, 33);
+            this.lblAddAirport.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblAddAirport.Name = "lblAddAirport";
-            this.lblAddAirport.Size = new System.Drawing.Size(108, 30);
+            this.lblAddAirport.Size = new System.Drawing.Size(138, 37);
             this.lblAddAirport.TabIndex = 17;
             this.lblAddAirport.Text = "End Route";
             // 
@@ -111,9 +118,10 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(198, 81);
+            this.label1.Location = new System.Drawing.Point(264, 100);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(70, 21);
+            this.label1.Size = new System.Drawing.Size(87, 28);
             this.label1.TabIndex = 20;
             this.label1.Text = "Route ID";
             // 
@@ -127,18 +135,20 @@
             "SHA - PEK",
             "SNN - FCO",
             "DUB - BGY"});
-            this.cboEndRoute.Location = new System.Drawing.Point(303, 77);
+            this.cboEndRoute.Location = new System.Drawing.Point(404, 95);
+            this.cboEndRoute.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.cboEndRoute.Name = "cboEndRoute";
-            this.cboEndRoute.Size = new System.Drawing.Size(147, 29);
+            this.cboEndRoute.Size = new System.Drawing.Size(195, 36);
             this.cboEndRoute.TabIndex = 23;
             // 
             // btnRouteSearch
             // 
             this.btnRouteSearch.BackColor = System.Drawing.Color.Plum;
             this.btnRouteSearch.Font = new System.Drawing.Font("Segoe UI", 11F);
-            this.btnRouteSearch.Location = new System.Drawing.Point(485, 76);
+            this.btnRouteSearch.Location = new System.Drawing.Point(647, 94);
+            this.btnRouteSearch.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnRouteSearch.Name = "btnRouteSearch";
-            this.btnRouteSearch.Size = new System.Drawing.Size(117, 30);
+            this.btnRouteSearch.Size = new System.Drawing.Size(156, 37);
             this.btnRouteSearch.TabIndex = 24;
             this.btnRouteSearch.Text = "SEARCH";
             this.btnRouteSearch.UseVisualStyleBackColor = false;
@@ -146,9 +156,9 @@
             // 
             // frmEndRoute
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(1067, 554);
             this.Controls.Add(this.btnRouteSearch);
             this.Controls.Add(this.cboEndRoute);
             this.Controls.Add(this.label1);
@@ -158,6 +168,7 @@
             this.Controls.Add(this.munBack);
             this.Controls.Add(this.mnuEndRoute);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "frmEndRoute";
             this.Text = "End Route";
             this.Load += new System.EventHandler(this.frmEndRoute_Load);
