@@ -32,7 +32,7 @@ namespace AirlineSYS
         {
             this.Close();
             frmAirlineMainMenu frmAirlineMainMenu = new frmAirlineMainMenu();
-            frmAirlineMainMenu.Show();
+            frmAirlineMainMenu.Show();  
         }
 
         private void label1_Click(object sender, EventArgs e)
