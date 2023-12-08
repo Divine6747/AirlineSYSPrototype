@@ -26,11 +26,6 @@ namespace AirlineSYS
             this.parent = parent;
         }
 
-        private void frmUpdateFlight_Load(object sender, EventArgs e)
-        {
-
-        }
-
         private void munBack_Click(object sender, EventArgs e)
         {
             this.Close();
@@ -40,13 +35,13 @@ namespace AirlineSYS
 
         private void btnFlightSearch_Click(object sender, EventArgs e)
         {
-            if (txtUpdateFlightNumber.Text.Length == 6 && (txtUpdateFlightNumber.Text != "AA4732" && txtUpdateFlightNumber.Text != "JL8915" && 
+            if (txtUpdateFlightNumber.Text.Length == 6 && (txtUpdateFlightNumber.Text != "AA4732" && txtUpdateFlightNumber.Text != "JL8915" &&
                 txtUpdateFlightNumber.Text != "EK2468" && txtUpdateFlightNumber.Text != "BA5739"))
             {
                 MessageBox.Show("Flight number does not exist", "Error!", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 txtUpdateFlightNumber.Focus();
                 txtUpdateFlightNumber.Clear();
-                return;              
+                return;
             }
             else if (txtUpdateFlightNumber.Text.Length != 6)
             {
@@ -58,7 +53,7 @@ namespace AirlineSYS
             else
             {
                 grpUpdateFlightDetails.Visible = true;
-              
+
                 if (txtUpdateFlightNumber.Text.Equals("AA4732"))
                 {
                     cboDeptAirportFlight.Text = "JFK";
@@ -197,6 +192,6 @@ namespace AirlineSYS
             }
         }
 
-        
+
     }
 }

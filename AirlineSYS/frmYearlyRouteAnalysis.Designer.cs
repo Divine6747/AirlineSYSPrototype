@@ -77,7 +77,7 @@
             "2021",
             "2022",
             "2023"});
-            this.comboBox1.Location = new System.Drawing.Point(391, 49);
+            this.comboBox1.Location = new System.Drawing.Point(391, 45);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(146, 29);
             this.comboBox1.TabIndex = 13;

@@ -229,7 +229,6 @@
             this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "frmCreateRoute";
             this.Text = "Create Route";
-            this.Load += new System.EventHandler(this.frmCreateRoute_Load);
             this.grpOperatorDetails.ResumeLayout(false);
             this.grpOperatorDetails.PerformLayout();
             this.ResumeLayout(false);

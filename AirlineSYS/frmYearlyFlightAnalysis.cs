@@ -23,16 +23,16 @@ namespace AirlineSYS
             this.parent = parent;
         }
 
-        private void frmYearlyFlightAnalysis_Load(object sender, EventArgs e)
-        {
-
-        }
-
         private void munBack_Click(object sender, EventArgs e)
         {
             this.Close();
             frmAirlineMainMenu frmAirlineMainMenu = new frmAirlineMainMenu();
             frmAirlineMainMenu.Show();
+        }
+
+        private void frmYearlyFlightAnalysis_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

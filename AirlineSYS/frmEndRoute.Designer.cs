@@ -171,7 +171,6 @@
             this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "frmEndRoute";
             this.Text = "End Route";
-            this.Load += new System.EventHandler(this.frmEndRoute_Load);
             this.grpEndRouteDetails.ResumeLayout(false);
             this.grpEndRouteDetails.PerformLayout();
             this.ResumeLayout(false);

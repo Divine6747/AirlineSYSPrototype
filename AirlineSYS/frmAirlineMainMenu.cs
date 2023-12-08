@@ -23,11 +23,6 @@ namespace AirlineSYS
             this.parent = parent;
         }
 
-        private void frmAirlineMainMenu_Load(object sender, EventArgs e)
-        {
-
-        }
-
         private void mnuEndRoute_Click_1(object sender, EventArgs e)
         {
             frmEndRoute frmAirlineMainMenu = new frmEndRoute();

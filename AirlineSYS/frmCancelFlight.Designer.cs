@@ -165,7 +165,6 @@
             this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "frmCancelFlight";
             this.Text = "Cancel Flight";
-            this.Load += new System.EventHandler(this.frmCancelFlight_Load);
             this.grpCancelFlightDetails.ResumeLayout(false);
             this.grpCancelFlightDetails.PerformLayout();
             this.ResumeLayout(false);

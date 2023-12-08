@@ -10,16 +10,11 @@ using System.Windows.Forms;
 
 namespace AirlineSYS
 {
-    public partial class Form1 : Form
+    public partial class chart : Form
     {
-        public Form1()
+        public chart()
         {
             InitializeComponent();
-        }
-
-        private void textBox3_TextChanged(object sender, EventArgs e)
-        {
-
         }
     }
 }

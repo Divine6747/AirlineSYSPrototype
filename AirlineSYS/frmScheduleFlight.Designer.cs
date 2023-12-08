@@ -85,7 +85,6 @@
             this.lblAddAirport.Size = new System.Drawing.Size(198, 37);
             this.lblAddAirport.TabIndex = 11;
             this.lblAddAirport.Text = "Schedule Flight";
-            this.lblAddAirport.Click += new System.EventHandler(this.lblAddAirport_Click);
             // 
             // lblAirportCode
             // 
@@ -119,7 +118,6 @@
             this.lblAirportPhone.Size = new System.Drawing.Size(136, 24);
             this.lblAirportPhone.TabIndex = 17;
             this.lblAirportPhone.Text = "Departure Date";
-            this.lblAirportPhone.Click += new System.EventHandler(this.lblAirportPhone_Click);
             // 
             // lblAirportEmail
             // 
@@ -131,7 +129,6 @@
             this.lblAirportEmail.Size = new System.Drawing.Size(141, 24);
             this.lblAirportEmail.TabIndex = 19;
             this.lblAirportEmail.Text = "Departure Time";
-            this.lblAirportEmail.Click += new System.EventHandler(this.lblAirportEmail_Click);
             // 
             // lblOperatorCode
             // 
@@ -143,7 +140,6 @@
             this.lblOperatorCode.Size = new System.Drawing.Size(143, 28);
             this.lblOperatorCode.TabIndex = 20;
             this.lblOperatorCode.Text = "Operator Code";
-            this.lblOperatorCode.Click += new System.EventHandler(this.lblOperatorCode_Click);
             // 
             // label2
             // 
@@ -208,7 +204,6 @@
             this.grpAirportDetails.TabIndex = 12;
             this.grpAirportDetails.TabStop = false;
             this.grpAirportDetails.Text = "Schedule Flight Details";
-            this.grpAirportDetails.Enter += new System.EventHandler(this.grpAirportDetails_Enter);
             // 
             // cboOperatorCodeFlight
             // 
@@ -352,7 +347,6 @@
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "frmScheduleFlight";
             this.Text = "Schedule Flight";
-            this.Load += new System.EventHandler(this.frmScheduleFlight_Load);
             this.grpAirportDetails.ResumeLayout(false);
             this.grpAirportDetails.PerformLayout();
             this.ResumeLayout(false);

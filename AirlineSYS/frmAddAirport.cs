@@ -52,12 +52,13 @@ namespace AirlineSYS
 
             }
 
-            else if (txtAirportName.Text.Length > 60 || !txtAirportName.Text.All(char.IsLetter))
+            else if (txtAirportName.Text.Length > 60 || !txtAirportName.Text.All(c => char.IsLetter(c) || char.IsWhiteSpace(c)))
             {
-                MessageBox.Show("Airport Name may only contain letters with a maximum length of 60", "Error!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Airport Name must contain only letters and have a maximum length of 60 characters.", "Error!", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 txtAirportName.Focus();
                 return;
             }
+
 
 
             else if (txtAirportStreet.Text.Length > 40 || !txtAirportStreet.Text.All(c => char.IsLetterOrDigit(c) || char.IsWhiteSpace(c)))
@@ -108,28 +109,21 @@ namespace AirlineSYS
                 txtAirportEmail.Focus();
                 return;
             }
+            else
+            {
 
-            MessageBox.Show("Airport has been added to the Database", "Success !!!", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show("Airport has been added to the Database", "Success !!!", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
-            txtAirportCode.Clear();
-            txtAirportName.Clear();
-            txtAirportStreet.Clear();
-            txtAirportCity.Clear();
-            txtAirportCountry.Clear();
-            txtAirportEircode.Clear();
-            txtAirportPhone.Clear();
-            txtAirportEmail.Clear();
+                txtAirportCode.Clear();
+                txtAirportName.Clear();
+                txtAirportStreet.Clear();
+                txtAirportCity.Clear();
+                txtAirportCountry.Clear();
+                txtAirportEircode.Clear();
+                txtAirportPhone.Clear();
+                txtAirportEmail.Clear();
+            }
 
-        }
-
-
-        private void frmAddAirport_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void txtAirportName_TextChanged(object sender, EventArgs e)
-        {
 
         }
     }

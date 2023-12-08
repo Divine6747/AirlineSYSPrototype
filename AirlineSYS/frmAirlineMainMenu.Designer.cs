@@ -224,7 +224,6 @@
             this.MainMenuStrip = this.mnuAirlineMainMenu;
             this.Name = "frmAirlineMainMenu";
             this.Text = "Airline Main Menu";
-            this.Load += new System.EventHandler(this.frmAirlineMainMenu_Load);
             ((System.ComponentModel.ISupportInitialize)(this.picAirlineMainMenu)).EndInit();
             this.mnuAirlineMainMenu.ResumeLayout(false);
             this.mnuAirlineMainMenu.PerformLayout();

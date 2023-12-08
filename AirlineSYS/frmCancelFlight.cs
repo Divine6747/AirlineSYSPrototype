@@ -15,18 +15,13 @@ namespace AirlineSYS
         frmAirlineMainMenu parent;
         public frmCancelFlight()
         {
-           
+
             InitializeComponent();
         }
         public frmCancelFlight(frmAirlineMainMenu parent)
         {
             InitializeComponent();
             this.parent = parent;
-        }
-
-        private void frmCancelFlight_Load(object sender, EventArgs e)
-        {
-
         }
 
         private void munBack_Click(object sender, EventArgs e)
@@ -69,7 +64,7 @@ namespace AirlineSYS
 
                 if (txtCancelFlightNumber.Text.Equals("AA4732"))
                 {
-                    lblCancelFlightDetails.Text = 
+                    lblCancelFlightDetails.Text =
 
                         "Departure Airport : John F. Kennedy International Airport." +
                         "\n\nArrival Airport : Shannon Airport" +
@@ -122,36 +117,36 @@ namespace AirlineSYS
                         "\n\nTicktet Price : €740.00";
 
                 }
-            
-                }
+
             }
-            private void btnAirportConfirm_Click(object sender, EventArgs e)
+        }
+        private void btnAirportConfirm_Click(object sender, EventArgs e)
+        {
+
+            DialogResult result = MessageBox.Show("Are you sure you want to cancel the flight?",
+                                                  "Confirmation",
+                                                  MessageBoxButtons.YesNo,
+                                                  MessageBoxIcon.Question);
+
+            if (result == DialogResult.Yes)
             {
+                MessageBox.Show("Flight has been Cancelled",
+                                "Success!",
+                                MessageBoxButtons.OK,
+                                MessageBoxIcon.Information);
 
-                DialogResult result = MessageBox.Show("Are you sure you want to cancel the flight?",
-                                                      "Confirmation",
-                                                      MessageBoxButtons.YesNo,
-                                                      MessageBoxIcon.Question);
-
-                if (result == DialogResult.Yes)
-                {
-                    MessageBox.Show("Flight has been Cancelled",
-                                    "Success!",
-                                    MessageBoxButtons.OK,
-                                    MessageBoxIcon.Information);
-
-                    grpCancelFlightDetails.Visible = false;
-                    txtCancelFlightNumber.Text = "";
-                }
-                else
-                {
-                    MessageBox.Show("Flight has been Cancelled",
-                                    "Flight not Cancelled!",
-                                    MessageBoxButtons.OK,
-                                    MessageBoxIcon.Information);
-                    grpCancelFlightDetails.Visible = false;
-                    txtCancelFlightNumber.Text = "";
-                }
+                grpCancelFlightDetails.Visible = false;
+                txtCancelFlightNumber.Text = "";
+            }
+            else
+            {
+                MessageBox.Show("Flight has been Cancelled",
+                                "Flight not Cancelled!",
+                                MessageBoxButtons.OK,
+                                MessageBoxIcon.Information);
+                grpCancelFlightDetails.Visible = false;
+                txtCancelFlightNumber.Text = "";
+            }
 
         }
     }
