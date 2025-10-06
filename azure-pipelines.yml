@@ -29,6 +29,6 @@ steps:
   inputs:
     targetPath: '$(Build.ArtifactStagingDirectory)'
     artifact: 'AirlineSYS'
-    #publishLocation: 'pipeline'
+    publishLocation: 'pipeline'
 
 
